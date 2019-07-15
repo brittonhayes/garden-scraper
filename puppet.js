@@ -85,7 +85,7 @@ const puppeteer = require("puppeteer");
   ];
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
-  page.setViewport({ width: 1920, height: 1080 });
+  page.setViewport({ width: 2000, height: 2800 });
 
   // Loop through components --> Screenshot --> Save as component name
   for (let component of components) {
@@ -108,5 +108,5 @@ const puppeteer = require("puppeteer");
     }
   }
   await browser.close();
-  console.log("\x1b[42m", "\x1b[37m", "Operation Complete!");
+  console.log("Operation Complete!");
 })();
